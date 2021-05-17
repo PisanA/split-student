@@ -50,8 +50,10 @@ jobs:
           ls -lR
           mv HW_Loops_Files.java split-instructor/src/main/java
           mv courseData.txt split-instructor/src/main/resources
+          echo "~~~ moved ~~~"
           ls -lR
           cd split-instructor
+          echo " change directory " 
           mvn clean compile test --batch-mode --fail-at-end
       - name: Publish Test Report
         if: ${{ always() }}
