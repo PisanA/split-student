@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Unit Testing
+name: Unit Testing and Checkstyle
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
@@ -48,9 +48,11 @@ jobs:
         run: |
           git clone https://github.com/PisanA/split-instructor.git
           ls -lR
-          mv Application.java split-instructor/src/main/java
+          mv HW_Loops_Files.java split-instructor/src/main/java
+          echo "~~~ moved ~~~"
           ls -lR
           cd split-instructor
+          echo " change directory " 
           mvn clean compile test --batch-mode --fail-at-end
       - name: Publish Test Report
         if: ${{ always() }}
