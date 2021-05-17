@@ -49,7 +49,6 @@ jobs:
           git clone https://github.com/PisanA/split-instructor.git
           ls -lR
           mv HW_Loops_Files.java split-instructor/src/main/java
-          mv courseData.txt split-instructor/src/main/resources
           echo "~~~ moved ~~~"
           ls -lR
           cd split-instructor
