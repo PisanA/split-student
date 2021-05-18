@@ -63,7 +63,7 @@ public class HW_Loops_Files {
         System.out.println();
       }
     } catch(FileNotFoundException fnfEx){
-      System.out.println("Course data file not found, exiting...");
+      System.out.println("Course data file not found, exiting... ");
     }
   }
 }
