@@ -54,6 +54,9 @@ jobs:
           cd split-instructor
           echo " change directory " 
           mvn clean compile test --batch-mode --fail-at-end
+          ls -lR
+          cd target/surefire-reports
+          cat *.txt
       - name: Publish Test Report
         if: ${{ always() }}
         uses: scacap/action-surefire-report@v1
