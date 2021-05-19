@@ -25,7 +25,7 @@ public class HW_Loops_Files {
       finalWeight = inputFile.nextDouble();
 
       while (inputFile.hasNextInt()) {
-        int studentCount = 0;  // Introduce a bug, should be 0
+        int studentCount = 0;   // Introduce a bug, should be 0
         courseNumber = inputFile.nextInt();
 
         // Report header
